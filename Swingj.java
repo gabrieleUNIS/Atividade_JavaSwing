@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class Swingj implements ActionListener {
     JTextField tf1,tf2,tf3,tf4;
-    JButton b1,b2;
+    JButton b1;
 
     Swingj(){
         JFrame f = new JFrame("Cálculo IMC");
@@ -21,8 +21,8 @@ public class Swingj implements ActionListener {
         l3=new JLabel("Resultado:");  
         l3.setBounds(117,130, 100,30); 
 
-        l4 =new JLabel("Classificação:");  
-        l4.setBounds(117,180, 100,30);
+        l4=new JLabel("Resultado:");  
+        l4.setBounds(117,180, 100,30); 
 
         //mudança de cor para as labels
         l1.setForeground(Color.BLACK);
