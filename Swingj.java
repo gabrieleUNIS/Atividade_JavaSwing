@@ -21,8 +21,8 @@ public class Swingj implements ActionListener {
         l3=new JLabel("Resultado:");  
         l3.setBounds(117,130, 100,30); 
 
-        l4=new JLabel("Resultado:");  
-        l4.setBounds(117,180, 100,30); 
+        l4=new JLabel("Classificação:");  
+        l4.setBounds(108,180, 100,30); 
 
         //mudança de cor para as labels
         l1.setForeground(Color.BLACK);
@@ -65,7 +65,7 @@ public class Swingj implements ActionListener {
         b1.addActionListener(this);
 
         //configurações frame
-        f.add(tf1);f.add(tf2);f.add(tf3);f.add(tf4);f.add(b1);f.add(l1);f.add(l2);f.add(l3);
+        f.add(tf1);f.add(tf2);f.add(tf3);f.add(tf4);f.add(b1);f.add(l1);f.add(l2);f.add(l3);f.add(l4);
         f.setSize(310,360);
         f.setLocationRelativeTo( null );
         f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  
