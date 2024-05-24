@@ -15,8 +15,8 @@ public class Swingj implements ActionListener {
         l1=new JLabel("Qual o seu peso?(kg)");
         l1.setBounds(85,30, 120,30);  
 
-        l2=new JLabel("Qual sua altura em metros? Ex.: 1.73"); 
-        l2.setBounds(41,80, 230,30); 
+        l2=new JLabel("Qual sua altura em centímetros?"); 
+        l2.setBounds(55,80, 230,30); 
 
         l3=new JLabel("Resultado:");  
         l3.setBounds(117,130, 100,30); 
@@ -82,8 +82,9 @@ public class Swingj implements ActionListener {
         double a=Double.parseDouble(s1);  
         double b=Double.parseDouble(s2);  
         double c=0;  
+        double d = b/100 ;
         int i = 0;
-        double mult = b*b;
+        double mult = d*d;
         while(e.getSource()==b1){  
             c=a/mult; 
             if(i == 2){
@@ -92,7 +93,7 @@ public class Swingj implements ActionListener {
             i += 1; 
         }
         String result = String.format("%.2f", c); 
-        tf3.setText(result + " kg/m²");
+        tf3.setText(result);
         
         if(c < 17){
             tf4.setText("Muito abaixo do peso.");
